@@ -6,7 +6,7 @@ title: Home
 # DoRothEA
 
 ## Overview
-DoRothEA (Discriminant Regulon Expression Analysis) is a manually curated human regulon to estimate single sample transcription factor (TF) activities from gene expression data and consensus TF-target DNA binding networks. The approach assumes that the activity of a TF can be estimated from the mRNA levels of its direct target genes. We provide two versions of DoRothEA
+DoRothEA (Discriminant Regulon Expression Analysis) is a manually curated human regulon to estimate single sample transcription factor (TF) activities from gene expression data and consensus TF-target DNA binding networks. The approach assumes that the activity of a TF can be estimated from the mRNA levels of its direct target genes. We provide two versions of DoRothEA.
 ### DoRothEA (v1)
 The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes. If you use this regulon please cite
 
@@ -28,7 +28,7 @@ The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes
 }
 ```
 ### DoRothEA (v2)
-This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and accompanied by a confidence score. You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915)
+This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and accompanied by a confidence score. You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915).
 
 ## Outlook
 Currently we are trying to infer mouse regulons from the human regulons. [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. More information coming soon...
