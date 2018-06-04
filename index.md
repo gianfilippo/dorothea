@@ -28,6 +28,7 @@ The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes
 }
 ```
 ### DoRothEA (v2)
-This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and accompanied by a confidence score.
+This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and accompanied by a confidence score. You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915)
 
-Currently we are preparing a manuscript to publish the new version of DoRothEA very soon...
+## Outlook
+Currently we are trying to infer mouse regulons from the human regulons. [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. More information coming soon...
