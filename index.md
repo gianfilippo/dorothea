@@ -28,7 +28,27 @@ The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes
 }
 ```
 ### DoRothEA (v2)
-This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and accompanied by a confidence score. You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915).
+This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and each TF-target interaction has been assigned a confidence score, ranging from A-E, being A the most confident interactions (see table below).
 
+| Confidence score  | #TFs  | #Interactions |
+| ----------------- | ----- | ------------- |
+| A                 | 94    | 5,156         |
+| B                 | 21    | 1,188         |
+| C                 | 174   | 7,422         | 
+| D                 | 94    | 11,038        |
+| E                 | 1,013 | 445,907       |
+| Total             | 1,396 | 470,701       |
+
+ You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915).
+
+[Garcia-Alonso et al 2018](https://www.biorxiv.org/content/early/2018/06/03/337915)
+Benchmark and integration of resources for the estimation of human transcription factor activities.
+
+```
+@article{garcia2018benchmark,
+  title={Benchmark and integration of resources for the estimation of human transcription factor activities},
+  author={Garcia-Alonso, Luz and Ibrahim, MM and Turei, D and Saez-Rodriguez, J}
+  journal={bioRxiv}
+```
 ## Outlook
 Currently we are trying to infer mouse regulons from the human regulons. [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. More information coming soon...
