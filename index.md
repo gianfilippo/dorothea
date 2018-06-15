@@ -13,11 +13,11 @@ The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes
 >Garcia-Alonso, L., Iorio, F., Matchan, A., Fonseca, N., Jaaks, P., Peat, G., Pignatelli, M., Falcone, F., Benes, CH., Dunham, I., Bignell, GR., McDade, S., Garnett, MJ., Saez-Rodriguez, J. (2017). [Transcription Factor Activities Enhance Markers of Drug Sensitivity in Cancer.](http://cancerres.aacrjournals.org/content/early/2017/12/09/0008-5472.CAN-17-1679) Cancer Research, 78(3), 769–780.
 
 ```
-@article{GarciaAlonso2017,
+@article{GarciaAlonso2018,
   doi = {10.1158/0008-5472.can-17-1679},
   url = {https://doi.org/10.1158/0008-5472.can-17-1679},
-  year  = {2017},
-  month = {dec},
+  year  = {2018},
+  month = {feb},
   publisher = {American Association for Cancer Research ({AACR})},
   volume = {78},
   number = {3},
