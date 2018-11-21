@@ -16,8 +16,8 @@ title:            DoRothEA
 tagline:          DoRothEA - GitHub page
 description:      "Manually curated human regulon to infer transcription factor activity"
 #url:              https://github.com/saezlab/projectDocumentationTemplate
-baseurl:          /DoRothEA/
-toollogo:         /DoRothEA/tool_logo.png
+baseurl:          /dorothea/
+toollogo:         /dorothea/tool_logo.png
 
 author:
   name:           'Luz Garcia-Alonso'
@@ -28,4 +28,4 @@ paginate:         5
 version:          2.0
 
 github:
-  repo:           https://github.com/saezlab/DoRothEA
+  repo:           https://github.com/saezlab/dorothea
