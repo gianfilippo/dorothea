@@ -44,10 +44,10 @@ This new version of DoRothEA provides updated TF regulons derived from a broader
 >Garcia-Alonso, L., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2018). [Benchmark and integration of resources for the estimation of human transcription factor activities.](https://www.biorxiv.org/content/early/2018/06/03/337915) BioRxiv.
 
 #### COMBAT vs nonCOMBAT
-Before infering regulons from GTEx data we corrected for batch effects using COMBAT. If you are interested in regulons inferred from non-batch corrected GTEx data, we provide the data [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
+Before inferring regulons from GTEx data we corrected for batch effects using COMBAT. If you are interested in regulons inferred from non-batch corrected GTEx data, we provide the data [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
 
 #### GTEx vs TCGA
-The default regulons contain among the other resources regulons derived from GTEx data using ARACNe. For users more interested in cancer specific applications we also provide DoRothEA with regulons infered from TCGA. Please find the consensus regulon [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/pancancer).
+The default regulons contain among the other resources regulons derived from GTEx data using ARACNe. For users more interested in cancer specific applications we also provide DoRothEA with regulons inferred from TCGA. Please find the consensus regulon [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/pancancer).
 
 ```
 @article{garcia2018benchmark,
