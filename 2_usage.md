@@ -22,16 +22,29 @@ TF_activities = SLEA(E = E, genesets = CTFRs_genesets, method = 'GSVA')$NES
 Below you can find two examples of how to calculate TF activities using the second version of DoRothEA.
 
 ```
+# Luz Garcia-Alonso
+# Saez-Rodriguez Lab
+# European Bioinformatics Institute (EMBL-EBI)
+# 2018.03.26
+
+
+
 # Load requeired packages
 require(viper) 
 
+
+
 # Load TF regulon genesets in VIPER format
-load('data/TFregulons/Robjects_VIPERformat/consensus/BEST_viperRegulon.rdata')
+load('data/TFregulons/consensus/Robjects_VIPERformat/normal/TOP10score_viperRegulon.rdata')
 # Clean TF names & explore object
 names(viper_regulon) = sapply(strsplit(names(viper_regulon), split = ' - '), head, 1)
 # Explore the regulons object
 names(viper_regulon)[1:10]
 viper_regulon[[1]]
+
+
+
+
 
 ##########################################################################################
 ## Example 1: Computing single-sample TF activities from a normalized gene expression matrix 
@@ -44,6 +57,9 @@ E[1:5, 1:5]
 TF_activities = viper(eset = E, regulon = viper_regulon, nes = T, method = 'none', minsize = 4, eset.filter = F)
 # Save results
 write.csv(TF_activities, file = 'TFactivities_example1.csv')
+
+
+
 
 ##########################################################################################
 ## Example 2: Computing TF activity changes from a differential gene expression signature
