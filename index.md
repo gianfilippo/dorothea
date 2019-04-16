@@ -28,7 +28,12 @@ The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes
 }
 ```
 ### DoRothEA (v2)
-This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. The new TF regulons are signed (to account for activation/repression), when possible, and each TF-target interaction has been assigned a confidence score, ranging from A-E, being A the most confident interactions (see table below). You can find the regulons [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/normal) 
+This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. See Figure below for an overview of actual used resources and strategies. 
+<img src="public/Figure1a.png" width="400">
+
+When possible the new TF regulons are signed to account for activation and repression. Moreover each TF-target interaction has been assigned a confidence score based on the number of supporting evidences. The confidence score are ranging from A-E, being A the most confident interactions. The number of interactions for each confidence level is displayed in the table below. You can find the regulons [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/normal) 
+
+
 
 | Confidence score  | #Interactions |
 | ----------------- | ----- | 
