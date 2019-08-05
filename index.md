@@ -46,7 +46,7 @@ When possible the new TF regulons are signed to account for activation and repre
 
  The manuscript is published in [Genome Research](https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract).
 
->Garcia-Alonso, L., Holland, CH., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2019). [Benchmark and integration of resources for the estimation of human transcription factor activities.]((https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract)
+>Garcia-Alonso, L., Holland, CH., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2019). [Benchmark and integration of resources for the estimation of human transcription factor activities.](https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract)
 
 #### COMBAT vs nonCOMBAT
 Before inferring regulons from GTEx data we corrected for batch effects using COMBAT. If you are interested in regulons inferred from non-batch corrected GTEx data, we provide the data [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
