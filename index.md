@@ -44,9 +44,9 @@ When possible the new TF regulons are signed to account for activation and repre
 | E                 |  763,110       |
 | Total             |  1,077,121       |
 
- You can find the preprint of the publication on [bioRxiv](https://www.biorxiv.org/content/early/2018/06/03/337915).
+ The manuscript is published in [Genome Research](https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract).
 
->Garcia-Alonso, L., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2018). [Benchmark and integration of resources for the estimation of human transcription factor activities.](https://www.biorxiv.org/content/early/2018/06/03/337915) BioRxiv.
+>Garcia-Alonso, L., Holland, CH., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2019). [Benchmark and integration of resources for the estimation of human transcription factor activities.]((https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract)
 
 #### COMBAT vs nonCOMBAT
 Before inferring regulons from GTEx data we corrected for batch effects using COMBAT. If you are interested in regulons inferred from non-batch corrected GTEx data, we provide the data [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
@@ -55,18 +55,17 @@ Before inferring regulons from GTEx data we corrected for batch effects using CO
 The default regulons contain among the other resources regulons derived from GTEx data using ARACNe. For users more interested in cancer specific applications we also provide DoRothEA with regulons inferred from TCGA. Please find the consensus regulon [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/pancancer).
 
 ```
-@article{garcia2018benchmark,
-  doi = {10.1101/337915},
-  url = {https://www.biorxiv.org/content/early/2018/06/03/337915},
-  year  = {2018},
-  month = {jun},
-  publisher = {},
-  volume = {},
-  number = {},
-  pages = {},
+@article{garcia2019benchmark,
+  doi = {10.1101/gr.240663.118},
+  url = {https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract},
+  year  = {2019},
+  month = {aug},
+  volume = {29},
+  number = {8},
+  pages = {1363-1375},
   title={Benchmark and integration of resources for the estimation of human transcription factor activities},
-  author={Garcia-Alonso, Luz and Ibrahim, MM and Turei, D and Saez-Rodriguez, J}
-  journal={bioRxiv}
+  author={Garcia-Alonso, L., Holland, C.H., Ibrahim, M.M., Turei, D. and Saez-Rodriguez, J.}
+  journal={Genome Research}
 ```
 ## Outlook
-Currently we are trying to infer mouse regulons from the human regulons. [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. More information coming soon...
+Currently we are trying to infer mouse regulons from the human regulons. The preprint is available on [bioRxiv](https://www.biorxiv.org/content/10.1101/532739v1). [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. 
