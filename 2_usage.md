@@ -3,6 +3,7 @@ layout: page
 title: Usage
 ---
 
+
 ## DoRothEA (v1)
 ### Example
 Below is an example how to run the first version of DoRothEA. The corresponding GitHub repository can be found [here](https://github.com/saezlab/DoRothEA/releases/tag/version1).
@@ -89,5 +90,9 @@ TF_activities = TF_activities[ order(TF_activities$p.value), ]
 # Save results
 write.csv(TF_activities, file = 'TFactivities_example2.csv')
 ```
+
+### DoRothEA as Shiny appliaction
+We provide a user friendly web application to predict TF activities based on DoRothEA's regulons: https://saezlab.shinyapps.io/funkiapp/
+
 ### Regulons access
 Next to the default [DoRothEA regulons](https://github.com/saezlab/DoRothEA/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/normal) we also provide an [alternative version of DoRothEA](https://github.com/saezlab/DoRothEA/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/pancancer) where GTEx data were replaced in the contruction process with expression data from TCGA. This might be useful esspecially for people interested in cancer research. Furthermore, we provide tissue specific regulons from [GTEx (corrected for batch effects using COMBAT)](https://github.com/saezlab/DoRothEA/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx/tissue_specific) and [GTEx (non-batch-corrected)](https://github.com/saezlab/DoRothEA/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
