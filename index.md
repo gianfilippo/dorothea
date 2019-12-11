@@ -5,67 +5,33 @@ title: Home
 
 # DoRothEA
 
-## Overview
-DoRothEA (Discriminant Regulon Expression Analysis) is a manually curated human regulon to estimate single sample transcription factor (TF) activities from gene expression data and consensus TF-target DNA binding networks. The approach assumes that the activity of a TF can be estimated from the mRNA levels of its direct target genes. We provide two versions of DoRothEA.
-### DoRothEA (v1)
-The first version of DoRothEA consists of 127 TFs targeting in total 7,445 genes. If you use this regulon please cite
+## Introduction
+### Overview
+DoRothEA is a gene set resource containing signed transcription factor (TF) - target interactions developed by [Garcia-Alonso et al., 2019](https://doi.org/10.1101/gr.240663.118). The collection of a TF and its transcriptional targets is defined as regulon. DoRothEA regulons were curated and collected from different types of evidence such as literature curated resources, ChIP-seq peaks, TF binding site motifs and interactions inferred directly from gene expression. 
 
->Garcia-Alonso, L., Iorio, F., Matchan, A., Fonseca, N., Jaaks, P., Peat, G., Pignatelli, M., Falcone, F., Benes, CH., Dunham, I., Bignell, GR., McDade, S., Garnett, MJ., Saez-Rodriguez, J. (2018). [Transcription Factor Activities Enhance Markers of Drug Sensitivity in Cancer.](http://cancerres.aacrjournals.org/content/early/2017/12/09/0008-5472.CAN-17-1679) Cancer Research, 78(3), 769–780.
+<img src="public/Figure1a.png" width="400">
 
-```
-@article{GarciaAlonso2018,
-  doi = {10.1158/0008-5472.can-17-1679},
-  url = {https://doi.org/10.1158/0008-5472.can-17-1679},
-  year  = {2018},
-  month = {feb},
-  publisher = {American Association for Cancer Research ({AACR})},
-  volume = {78},
-  number = {3},
-  pages = {769--780},
-  author = {Luz Garcia-Alonso and Francesco Iorio and Angela Matchan and Nuno Fonseca and Patricia Jaaks and Gareth Peat and Miguel Pignatelli and Fiammetta Falcone and Cyril H. Benes and Ian Dunham and Graham Bignell and Simon S. McDade and Mathew J. Garnett and Julio Saez-Rodriguez},
-  title = {Transcription Factor Activities Enhance Markers of Drug Sensitivity in Cancer},
-  journal = {Cancer Research}
-}
-```
-### DoRothEA (v2)
-This new version of DoRothEA provides updated TF regulons derived from a broader collection of resources and strategies. See Figure below for an overview of actual used resources and strategies. 
-<img src="public/Figure1a.png" width="600">
+For each TF-target interaction we assigned a confidence level based on the number of supporting evidence. The confidence assigment comprises five levels, ranging from A (highest confidence) to E (lowest confidence). Interactions that are supported by all four lines of evidence, manually curated by experts in specific reviews, or supported both in at least two curated resources are considered to be highly reliable and were assigned an A level. Level B-D are reserved for curated and/or ChIP-seq interactions with different levels of additional evidence. Finally, E level is used for interactions that are uniquely supported by computational predictions. To provide the most confident regulon for each TF, we aggregated the TF-target interactions with the highest possible confidence score that resulted in a regulon size equal to or greater than ten targets. The final confidence level assigned to the TF regulon is the lowest confidence score of its component targets.
 
-When possible the new TF regulons are signed to account for activation and repression. Moreover each TF-target interaction has been assigned a confidence score based on the number of supporting evidences. The confidence score are ranging from A-E, being A the most confident interactions. The number of interactions for each confidence level is displayed in the table below. You can find the regulons [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/normal) 
+DoRothEA regulons can be coupled with several statistical method yielding a *functional analysis*-tool to infer TF activity from gene expression data. The activity is computed by considering not the gene expression of the TFs itself but the mRNA levels of their direct transcriptional targets. We define the transcriptional targets to as footprints of a TF on gene expression. A more detailed description of the concept of *footprint-based* analysis is available in the review [Dugourd et al., 2019](https://doi.org/10.1016/j.coisb.2019.04.002).
+
+Typcially, DoRothEA is coupled with the statistical method [VIPER](https://www.bioconductor.org/packages/release/bioc/html/viper.html) as it incorporates the mode of regulation of each TF-target interaction. However, VIPER can be replaced by any other statistical method that aims to analyse gene sets, e.g. GSEA.
 
 
+### Update #1
+Originally DoRothEA contained only human regulons. In a benchmark study we showed that DoRothEA in combination with VIPER is also applicable to mouse data, as described in [Holland et al., 2019](https://doi.org/10.1016/j.bbagrm.2019.194431). Accordingly, we developed a mouse version of DoRothEA by transforming the human genes to their mouse orthologs.
 
-| Confidence score  | #Interactions |
-| ----------------- | ----- | 
-| A                 |  5,869         |
-| B                 |  8,991         |
-| C                 |  17,519         | 
-| D                 |  281,632        |
-| E                 |  763,110       |
-| Total             |  1,077,121       |
+### Update #2
+Recent technological advances in single-cell RNA-seq enable the profiling of gene expression at the individual cell level. We showed that DoRothEA in combination with VIPER can be applied to scRNA-seq data, as described in [Holland et al., 2019](https://doi.org/10.1101/753319).
 
- The manuscript is published in [Genome Research](https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract).
+## Citing DoRothEA
+Beside the original paper there are two additional papers expanding the usage of DoRothEA regulons.
 
->Garcia-Alonso, L., Holland, CH., Ibrahim, MM., Turei, D., Saez-Rodriguez, J. (2019). [Benchmark and integration of resources for the estimation of human transcription factor activities.](https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract)
+* If you use DoRothEA for your research please cite the original publication: 
+> Garcia-Alonso L, Holland CH, Ibrahim MM, Turei D, Saez-Rodriguez J. "Benchmark and integration of resources for the estimation of human transcription factor activities." _Genome Research._ 2019. DOI: [10.1101/gr.240663.118](https://doi.org/10.1101/gr.240663.118).
 
-#### COMBAT vs nonCOMBAT
-Before inferring regulons from GTEx data we corrected for batch effects using COMBAT. If you are interested in regulons inferred from non-batch corrected GTEx data, we provide the data [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/advanced_single_evidences/Robjects_VIPERformat/inferred_ARACNe/normal_GTEx_non_batch_corrected/tissue_specific).
+* If you use the mouse version of DoRothEA please cite additionally:
+> Holland CH, Szalai B, Saez-Rodriguez J. "Transfer of regulatory knowledge from human to mouse for functional genomics analysis." _Biochimica et Biophysica Acta (BBA) - Gene Regulatory Mechanisms._ 2019. DOI: [10.1016/j.bbagrm.2019.194431](https://doi.org/10.1016/j.bbagrm.2019.194431).
 
-#### GTEx vs TCGA
-The default regulons contain among the other resources regulons derived from GTEx data using ARACNe. For users more interested in cancer specific applications we also provide DoRothEA with regulons inferred from TCGA. Please find the consensus regulon [here](https://github.com/saezlab/dorothea/tree/master/data/TFregulons/consensus/Robjects_VIPERformat/pancancer).
-
-```
-@article{garcia2019benchmark,
-  doi = {10.1101/gr.240663.118},
-  url = {https://genome.cshlp.org/content/early/2019/07/24/gr.240663.118.abstract},
-  year  = {2019},
-  month = {aug},
-  volume = {29},
-  number = {8},
-  pages = {1363-1375},
-  title={Benchmark and integration of resources for the estimation of human transcription factor activities},
-  author={Garcia-Alonso, L., Holland, C.H., Ibrahim, M.M., Turei, D. and Saez-Rodriguez, J.}
-  journal={Genome Research}
-```
-## Outlook
-Currently we are trying to infer mouse regulons from the human regulons. The preprint is available on [bioRxiv](https://www.biorxiv.org/content/10.1101/532739v1). [Drop us a line](mailto:cholland2408@gmail.com) if you are interested in the progress. 
+* If you apply DoRothEA's regulons on single-cell RNA-seq data please cite additionally:
+> Holland CH, Tanevski J, Gleixner J, Kumar MP, Mereu E, Perales-Patón J, Joughin BA, Stegle O, Lauffenburger DA, Heyn H, Szalai B, Saez-Rodriguez, J. "Robustness and applicability of functional genomics tools on scRNA-seq data." _bioRxiv._ 2019. DOI: [10.1101/753319](https://doi.org/10.1101/753319).
