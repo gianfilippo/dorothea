@@ -18,11 +18,11 @@ DoRothEA regulons can be coupled with several statistical method yielding a *fun
 Typcially, DoRothEA is coupled with the statistical method [VIPER](https://www.bioconductor.org/packages/release/bioc/html/viper.html) as it incorporates the mode of regulation of each TF-target interaction. However, VIPER can be replaced by any other statistical method that aims to analyse gene sets, e.g. GSEA.
 
 
-### Update #1
+### Update #1 - extension to mouse
 Originally DoRothEA contained only human regulons. In a benchmark study we showed that DoRothEA in combination with VIPER is also applicable to mouse data, as described in [Holland et al., 2019](https://doi.org/10.1016/j.bbagrm.2019.194431). Accordingly, we developed a mouse version of DoRothEA by transforming the human genes to their mouse orthologs.
 
-### Update #2
-Recent technological advances in single-cell RNA-seq enable the profiling of gene expression at the individual cell level. We showed that DoRothEA in combination with VIPER can be applied to scRNA-seq data, as described in [Holland et al., 2019](https://doi.org/10.1101/753319).
+### Update #2 - extension to single-cell RNA-seq data
+Recent technological advances in single-cell RNA-seq enable the profiling of gene expression at the individual cell level. We showed that DoRothEA in combination with VIPER can be applied to scRNA-seq data, as described in [Holland et al., 2020](https://doi.org/10.1186/s13059-020-1949-z).
 
 ## Citing DoRothEA
 Beside the original paper there are two additional papers expanding the usage of DoRothEA regulons.
@@ -34,4 +34,4 @@ Beside the original paper there are two additional papers expanding the usage of
 > Holland CH, Szalai B, Saez-Rodriguez J. "Transfer of regulatory knowledge from human to mouse for functional genomics analysis." _Biochimica et Biophysica Acta (BBA) - Gene Regulatory Mechanisms._ 2019. DOI: [10.1016/j.bbagrm.2019.194431](https://doi.org/10.1016/j.bbagrm.2019.194431).
 
 * If you apply DoRothEA's regulons on single-cell RNA-seq data please cite additionally:
-> Holland CH, Tanevski J, Gleixner J, Kumar MP, Mereu E, Perales-Patón J, Joughin BA, Stegle O, Lauffenburger DA, Heyn H, Szalai B, Saez-Rodriguez, J. "Robustness and applicability of functional genomics tools on scRNA-seq data." _bioRxiv._ 2019. DOI: [10.1101/753319](https://doi.org/10.1101/753319).
+> Holland CH, Tanevski J, Perales-Patón J, Gleixner J, Kumar MP, Mereu E, Joughin BA, Stegle O, Lauffenburger DA, Heyn H, Szalai B, Saez-Rodriguez, J. "Robustness and applicability of transcription factor and pathway analysis tools on single-cell RNA-seq data." _Genome Biology._ 2020. DOI: [10.1186/s13059-020-1949-z](https://doi.org/10.1186/s13059-020-1949-z).
