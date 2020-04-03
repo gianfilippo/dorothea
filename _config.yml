@@ -14,7 +14,7 @@ permalink:        pretty
 # Setup
 title:            DoRothEA
 tagline:          DoRothEA - GitHub page
-description:      "Manually curated human regulon to infer transcription factor activity"
+description:      "Manually curated human and mouse regulon to infer transcription factor activity"
 #url:              https://github.com/saezlab/projectDocumentationTemplate
 baseurl:          /dorothea/
 toollogo:         /dorothea/tool_logo.png
@@ -25,7 +25,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          2.0
+version:          1.0
 
 github:
   repo:           https://github.com/saezlab/dorothea

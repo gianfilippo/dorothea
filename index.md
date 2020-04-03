@@ -17,7 +17,13 @@ DoRothEA regulons can be coupled with several statistical method yielding a *fun
 
 Typcially, DoRothEA is coupled with the statistical method [VIPER](https://www.bioconductor.org/packages/release/bioc/html/viper.html) as it incorporates the mode of regulation of each TF-target interaction. However, VIPER can be replaced by any other statistical method that aims to analyse gene sets, e.g. GSEA.
 
+## Access
+DoRothEA regulons are available via an R/BioConductor package. The development version of the package is accessible on [GitHub](https://github.com/saezlab/dorothea/tree/master).
 
+## Usage of DoRothEA for commercial purpose
+DoRothEA as it stands is intended only for academic use as in contains resources whose licenses don't permit commerical use. Howevever, we developed a non-academic version of DoRothEA by removing the critically resources (namely KEGG and TRED from the curated databases). You find the non-academic package with the regulons [here](https://github.com/saezlab/dorothea/tree/non-academic)
+
+## Updates
 ### Update #1 - extension to mouse
 Originally DoRothEA contained only human regulons. In a benchmark study we showed that DoRothEA in combination with VIPER is also applicable to mouse data, as described in [Holland et al., 2019](https://doi.org/10.1016/j.bbagrm.2019.194431). Accordingly, we developed a mouse version of DoRothEA by transforming the human genes to their mouse orthologs.
 

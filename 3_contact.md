@@ -3,4 +3,4 @@ layout: page
 title: Contact
 ---
 
-If you have questions which could be also interesting for other users, we highly encourage you to use the [GitHub Issue Tracker](https://github.com/saezlab/DoRothEA/issues). But also feel free to [contact us](mailto:saezrodriguez@gmail.com) directly per mail.
+If you have questions which could be also interesting for other users, we highly encourage you to use the [GitHub Issue Tracker](https://github.com/saezlab/dorothea/issues). But also feel free to [contact us](mailto:saezrodriguez@gmail.com) directly per mail.
